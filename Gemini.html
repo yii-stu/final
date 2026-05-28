@@ -68,7 +68,12 @@
 <body>
 
   <a-scene
-    mindar-image="imageTargetSrc: Gemini.mind; autoStart: true;"
+    mindar-image="imageTargetSrc: Gemini.mind;
+    autoStart: true;
+    uiScanning: no;
+    uiLoading: no;
+    uiError: no;
+    "
     color-space="sRGB"
     renderer="colorManagement: true; physicallyCorrectLights: true"
     vr-mode-ui="enabled: false"
@@ -536,10 +541,8 @@ target.addEventListener(
 document
   .querySelector('#leftButton')
   .addEventListener('click', () => {
-    window.open(
-      'https://chiang0804-sudo.github.io/finalexam/zodiac.html',
-      '_blank'
-    );
+    window.location.href =
+      'https://chiang0804-sudo.github.io/finalexam/zodiac.html';
   });
 
 // =====================
@@ -549,10 +552,8 @@ document
 document
   .querySelector('#rightButton')
   .addEventListener('click', () => {
-    window.open(
-      'https://chiang0804-sudo.github.io/finalexam/Geministory.html',
-      '_blank'
-    );
+    window.location.href =
+      'https://chiang0804-sudo.github.io/finalexam/Geministory.html';
   });
 
 </script>
